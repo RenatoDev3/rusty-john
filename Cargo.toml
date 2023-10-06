@@ -1,0 +1,11 @@
+[package]
+name = "rusty-john"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ethers = { git = "https://github.com/gakonst/ethers-rs", features = ["ws", "rustls", "abigen"] }
+eyre = { version = "0.6" }
+dotenv = "0.15.0"
+tokio = { version = "1.5", features = ["macros", "rt-multi-thread"] }
+itertools = "0.10.2"
